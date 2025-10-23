@@ -24,6 +24,12 @@ try:
     print("✅ Cliente Supabase inicializado correctamente.")
 except Exception as e:
     print(f"❌ Error al inicializar Supabase: {e}")
+    
+# MENSAJE DE INICIALIZACIÓN
+@app.route("/")
+def home():
+    return {"message": "Backend Flask funcionando 🚀"}
+
 
 # ------------------------------------------------------------
 # 🚀 1. DATASETS
